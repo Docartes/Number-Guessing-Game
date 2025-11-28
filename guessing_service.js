@@ -24,6 +24,7 @@ Let's start the game!\n`);
 				rl.question(`Enter your guess: `, number => {
 					if ( number == answer ) {
 						console.log(`Correct\n`)
+						console.log(`Congrat your gueess number in ${trying} attemps`)
 						return rl.close()
 					}
 
@@ -31,7 +32,7 @@ Let's start the game!\n`);
 						console.log('Youre run of guess change')
 						return rl.close()
 					}
-					console.log(`incorrect\n`)
+					console.log(`Incorrect\n`)
 					trying++;
 					return askQuestion()
 				})
@@ -45,6 +46,7 @@ Let's start the game!\n`);
 				rl.question(`Enter your guess: `, number => {
 					if ( number == answer ) {
 						console.log(`Correct\n`)
+						console.log(`Congrat your gueess number in ${trying} attemps`)
 						return rl.close()
 					}
 
@@ -52,7 +54,7 @@ Let's start the game!\n`);
 						console.log('Youre run of guess change')
 						return rl.close()
 					}
-					console.log(`incorrect\n`)
+					console.log(`Incorrect\n`)
 					trying++;
 					return askQuestion()
 				})
@@ -66,6 +68,7 @@ Let's start the game!\n`);
 				rl.question(`Enter your guess: `, number => {
 					if ( number == answer ) {
 						console.log(`Correct\n`)
+						console.log(`Congrat your gueess number in ${trying} attemps`)
 						return rl.close()
 					}
 
