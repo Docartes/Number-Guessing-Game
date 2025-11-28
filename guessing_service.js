@@ -32,7 +32,12 @@ Let's start the game!\n`);
 						console.log('Youre run of guess change')
 						return rl.close()
 					}
-					console.log(`Incorrect\n`)
+
+					if ( number > answer ) {
+						console.log(`Incorrect, the answer is less than ${(number)} \n`)
+					} else if ( number < answer ) {
+						console.log(`Incorrect, the answer is greater than ${(number)} \n`)						
+					}
 					trying++;
 					return askQuestion()
 				})
